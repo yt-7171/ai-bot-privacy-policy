@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terms of Service | Substitute Harry</title>
+
+    <meta name="description"
+          content="Terms of Service for Substitute Harry, an AI-powered Discord bot created for Mini Harry.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #08090d;
+            --card: #11131a;
+            --card-hover: #171a23;
+            --text: #f5f7ff;
+            --muted: #9da3b5;
+            --accent: #7c5cff;
+            --accent2: #9b7cff;
+            --border: rgba(255,255,255,0.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background:
+                radial-gradient(circle at 15% 10%, rgba(124,92,255,0.16), transparent 28%),
+                radial-gradient(circle at 85% 20%, rgba(155,124,255,0.10), transparent 25%),
+                var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(15px);
+            background: rgba(8,9,13,0.78);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .brand-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            box-shadow: 0 8px 25px rgba(124,92,255,0.25);
+        }
+
+        .nav-link {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        .hero {
+            max-width: 1000px;
+            margin: auto;
+            padding: 90px 25px 55px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 7px 14px;
+            border: 1px solid rgba(124,92,255,0.35);
+            background: rgba(124,92,255,0.10);
+            color: #c7bbff;
+            border-radius: 999px;
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 72px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #ffffff, #a994ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .updated {
+            margin-top: 20px;
+            color: #73798a;
+            font-size: 13px;
+        }
+
+        main {
+            max-width: 950px;
+            margin: auto;
+            padding: 20px 25px 80px;
+        }
+
+        .notice {
+            padding: 20px 22px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(124,92,255,0.25);
+            background: rgba(124,92,255,0.07);
+            border-radius: 16px;
+            color: #c9c5dc;
+        }
+
+        .section {
+            background: rgba(17,19,26,0.86);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 30px;
+            margin-bottom: 18px;
+            transition: 0.25s ease;
+        }
+
+        .section:hover {
+            background: var(--card-hover);
+            border-color: rgba(124,92,255,0.18);
+            transform: translateY(-2px);
+        }
+
+        .section-number {
+            color: var(--accent2);
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .section p {
+            color: #c0c5d2;
+            margin-bottom: 12px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            padding-left: 22px;
+            color: #c0c5d2;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        strong {
+            color: white;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            text-align: center;
+            padding: 35px 20px;
+            color: #74798a;
+            font-size: 13px;
+        }
+
+        .footer-title {
+            color: #bfc4d2;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .nav-container {
+                padding: 15px 18px;
+            }
+
+            .hero {
+                padding: 65px 20px 40px;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            main {
+                padding: 15px 15px 60px;
+            }
+
+            .section {
+                padding: 23px;
+                border-radius: 15px;
+            }
+
+            .section h2 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <span class="brand-icon">SH</span>
+                Substitute Harry
+            </a>
+
+            <a href="#terms" class="nav-link">
+                Terms of Service
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge">
+            Official Terms of Service
+        </div>
+
+        <h1>
+            <span class="gradient-text">Substitute Harry</span>
+        </h1>
+
+        <p>
+            Terms governing the use of Substitute Harry,
+            an AI-powered Discord application created for Mini Harry.
+        </p>
+
+        <div class="updated">
+            Last updated: September 8, 2026
+        </div>
+    </header>
+
+    <main id="terms">
+        <div class="notice">
+            By using or interacting with Substitute Harry, you acknowledge
+            that you have read and agree to these Terms of Service.
+        </div>
+
+        <section class="section">
+            <div class="section-number">01</div>
+            <h2>Acceptance of Terms</h2>
+            <p>
+                By inviting, using, or interacting with Substitute Harry
+                ("the Bot", "we", "us", or "our"), you agree to comply with
+                these Terms of Service.
+            </p>
+            <p>
+                If you do not agree with these terms, you should not use
+                or interact with the Bot.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-number">02</div>
+            <h2>About Substitute Harry</h2>
+            <p>
+                Substitute Harry is an AI-powered Discord bot created for
+                Mini Harry and designed to provide AI-based responses,
+                commands, and related features within Discord.
+            </p>
+            <p>
+                The Bot may use third-party artificial intelligence
+                services to generate responses.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-number">03</div>
+            <h2>Acceptable Use</h2>
+            <p>
+                You agree to use Substitute Harry responsibly and in
+                accordance with Discord's rules and applicable laws.
+            </p>
+            <p>You must not:</p>
+            <ul>
+                <li>Use the Bot for illegal activities.</li>
+                <li>Attempt to disrupt, exploit, or damage the Bot.</li>
+                <li>Attempt to gain unauthorized access to the Bot or its systems.</li>
+                <li>Abuse commands or features in a way that negatively affects other users.</li>
+                <li>Use the Bot to distribute malicious software or harmful content.</li>
+                <li>Attempt to bypass reasonable limitations or security measures.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-number">04</div>
+            <h2>AI-Generated Responses</h2>
+            <p>
+                Substitute Harry uses artificial intelligence to generate
+                responses. AI-generated responses may occasionally be
+                inaccurate, incomplete, outdated, or inappropriate.
+            </p>
+            <p>
+                You should not treat responses generated by the Bot as
+                professional, legal, medical, financial, or other expert
+                advice.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-number">05</div>
+            <h2>Availability</h2>
+            <p>
+                We aim to keep Substitute Harry available and functional,
+                but continuous availability is not guaranteed.
+            </p>
+            <p>
+                The Bot may occasionally be unavailable because of
+                maintenance, updates, technical problems, Discord outages,
+                or third-party service interruptions.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-number">06</div>
+            <h2>Third-Party Services</h2>
+            <p>
+                Substitute Harry may rely on Discord and external
+                artificial intelligence or hosting services.
+            </p>
+            <p>
+                These third-party services operate under their own terms
+                and policies. We are not responsible for outages or
+                changes made by third-party providers.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-number">07</div>
+            <h2>Termination</h2>
+            <p>
+                Access to Substitute Harry may be restricted or terminated
+                if a user violates these Terms of Service, abuses the Bot,
+                or uses it in a harmful or unlawful manner.
+            </p>
+            <p>
+                Server administrators may also remove the Bot from their
+                Discord server at any time.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-number">08</div>
+            <h2>Changes to These Terms</h2>
+            <p>
+                These Terms of Service may be updated from time to time
+                to reflect changes to Substitute Harry, its features,
+                or applicable requirements.
+            </p>
+            <p>
+                The latest version published on this page will replace
+                previous versions.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-number">09</div>
+            <h2>Limitation of Liability</h2>
+            <p>
+                Substitute Harry is provided on an "as available" basis.
+                To the extent permitted by applicable law, the developers
+                are not responsible for damages or losses resulting from
+                the use or inability to use the Bot.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="section-number">10</div>
+            <h2>Contact</h2>
+            <p>
+                If you have questions, concerns, or requests regarding
+                these Terms of Service, contact the Substitute Harry
+                development team through the official support channel
+                associated with the Bot.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-title">
+            Substitute Harry
+        </div>
+
+        <div>
+            An AI-powered Discord application made for Mini Harry.
+        </div>
+
+        <div style="margin-top: 10px;">
+            © 2026 Substitute Harry. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
